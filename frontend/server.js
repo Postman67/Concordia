@@ -34,7 +34,7 @@ app.use('/health', proxy)
 app.use(express.static(path.join(__dirname, 'dist')))
 
 // ── SPA fallback: all other GET requests serve index.html ─────────────────────
-app.get('*', (_req, res) => {
+app.use((_req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'))
 })
 
