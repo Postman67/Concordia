@@ -1,10 +1,11 @@
 import axios from 'axios'
 
-const BASE_URL = import.meta.env.VITE_FEDERATION_BASE_URL
+// Requests are made to the same origin — the server (Express in prod, Vite
+// proxy in dev) forwards /api and /health to the Federation service.
 const TOKEN_KEY = import.meta.env.VITE_TOKEN_KEY
 
 const client = axios.create({
-  baseURL: BASE_URL,
+  baseURL: '',
   headers: { 'Content-Type': 'application/json' },
 })
 
