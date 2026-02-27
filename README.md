@@ -1,2 +1,2 @@
 # Concordia
-Federated/decentralized chat system
+Fontend for the Concordia Federated/decentralized chat system
