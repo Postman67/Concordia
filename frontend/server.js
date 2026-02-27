@@ -5,11 +5,16 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const PORT = process.env.PORT || 3000
-const FEDERATION_BASE_URL = process.env.FEDERATION_BASE_URL
+let FEDERATION_BASE_URL = process.env.FEDERATION_BASE_URL
 
 if (!FEDERATION_BASE_URL) {
   console.error('ERROR: FEDERATION_BASE_URL environment variable is not set.')
   process.exit(1)
+}
+
+// Ensure the URL has a scheme — Railway internal hostnames have none by default
+if (!/^https?:\/\//i.test(FEDERATION_BASE_URL)) {
+  FEDERATION_BASE_URL = `http://${FEDERATION_BASE_URL}`
 }
 
 const app = express()
