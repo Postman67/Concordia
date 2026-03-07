@@ -46,7 +46,7 @@ export default function LoginPage() {
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
         <h1 className="text-2xl font-bold text-gray-900 mb-1">Welcome back</h1>
         <p className="text-sm text-gray-500 mb-8">
-          Log in to your Concordia account
+          Log in to jump back into the conversation
         </p>
 
         {globalError && (

@@ -44,7 +44,7 @@ export default function RegisterPage() {
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
         <h1 className="text-2xl font-bold text-gray-900 mb-1">Create your account</h1>
         <p className="text-sm text-gray-500 mb-8">
-          Join the Concordia federation
+          One identity. Every server. Join the Concordia federation.
         </p>
 
         {globalError && (

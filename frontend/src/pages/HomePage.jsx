@@ -9,15 +9,15 @@ export default function HomePage() {
       {/* Hero */}
       <main className="flex-1 flex flex-col items-center justify-center text-center px-4 py-24">
         <span className="mb-4 inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full">
-          Welcome to Concordia
+          Real-time · Federated · Open
         </span>
         <h1 className="text-5xl sm:text-6xl font-extrabold text-gray-900 leading-tight max-w-3xl">
-          One account.{' '}
-          <span className="text-indigo-600">Everything connected.</span>
+          Chat freely.{' '}
+          <span className="text-indigo-600">Stay connected across the federation.</span>
         </h1>
         <p className="mt-6 text-lg text-gray-500 max-w-xl">
-          Concordia gives you a single, secure identity across the federation.
-          Register once and access every connected service seamlessly.
+          Concordia is a real-time, decentralized chat and social platform.
+          Join servers, message friends, and own your identity — across the entire federation.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
@@ -52,19 +52,19 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-8 text-center">
           {[
             {
+              icon: '�',
+              title: 'Real-time messaging',
+              body: 'Instant messages, channels, and direct conversations — built for speed and delivered live across every node in the network.',
+            },
+            {
+              icon: '🌐',
+              title: 'Truly federated',
+              body: 'No single company controls the network. Servers talk to each other directly, so your communities stay online and independent.',
+            },
+            {
               icon: '🔐',
-              title: 'Secure by default',
-              body: 'Passwords are bcrypt-hashed and JWTs are signed server-side. Your credentials never leave our servers in plain text.',
-            },
-            {
-              icon: '⚡',
-              title: 'Federation-ready',
-              body: 'One set of credentials works across every service in the Concordia federation — no extra sign-ups required.',
-            },
-            {
-              icon: '🛠️',
-              title: 'Manage your profile',
-              body: 'Update your username, email, or password any time from your personal dashboard.',
+              title: 'You own your identity',
+              body: 'One account works across every Concordia server. Your profile, your data, your rules — secured with end-to-end signed tokens.',
             },
           ].map(({ icon, title, body }) => (
             <div key={title} className="flex flex-col items-center gap-3">
