@@ -1,13 +1,15 @@
 # Concordia — Desired Digital Assets
 
 ## Logo & wordmark
-- [ ] SVG wordmark (text only — "Concordia")
-- [ ] SVG full lockup — icon + wordmark, light (for use on white/light backgrounds)
-- [ ] SVG full lockup — icon + wordmark, dark (for use on dark/coloured backgrounds)
+- [x] SVG wordmark — `Wordmark - Indigo.svg`
+- [x] SVG full lockup (icon + wordmark) — `Logo - Indigo.svg`
+- [x] Icon only — `Icon - Indigo.png`
+- [x] Text only — `Text Only - Indigo.svg`
+- [ ] Light/white variants of each (for dark backgrounds) — *request from Peter when needed*
 
 ## Site / app
-- [ ] Header logo — horizontal lockup, used in the Navbar (SVG, ~160×40 px)
-- [ ] Hero banner — landing page wide banner image (1440×600 px)
+- [x] Header logo — `Wordmark - Indigo.svg` used in Navbar
+- [x] Hero banner (animated) — `Hero - Indigo.svg` (1440×600, gradient bg, CSS staggered fade-in on C / wordmark / tagline)
 - [ ] OG / social share image (1200×630 px) — logo + tagline for link previews on Discord, Twitter, etc.
 
 ## App icons
@@ -17,3 +19,4 @@
 - [ ] "No messages yet" illustration
 - [ ] "Server offline" illustration
 - [ ] "No servers joined" illustration
+

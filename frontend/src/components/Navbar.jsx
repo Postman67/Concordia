@@ -13,8 +13,15 @@ export default function Navbar() {
   return (
     <nav className="bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link to="/" className="text-xl font-bold text-indigo-600 tracking-tight">
-          Concordia
+
+        {/* Wordmark logo */}
+        <Link to="/" className="flex items-center gap-2.5 shrink-0">
+          <img
+            src="/branding/Wordmark - Indigo.svg"
+            alt="Concordia"
+            className="h-9 w-auto"
+            draggable={false}
+          />
         </Link>
 
         <div className="flex items-center gap-4">
@@ -22,13 +29,13 @@ export default function Navbar() {
             <>
               <Link
                 to="/dashboard"
-                className="text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors"
+                className="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-colors"
               >
                 Dashboard
               </Link>
               <button
                 onClick={handleSignOut}
-                className="text-sm font-medium text-gray-500 hover:text-red-500 transition-colors"
+                className="text-sm font-semibold text-gray-500 hover:text-red-500 transition-colors"
               >
                 Sign Out
               </button>
@@ -37,19 +44,20 @@ export default function Navbar() {
             <>
               <Link
                 to="/login"
-                className="text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors"
+                className="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-colors"
               >
                 Log In
               </Link>
               <Link
                 to="/register"
-                className="text-sm font-medium bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors"
+                className="text-sm font-semibold bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors"
               >
                 Sign Up
               </Link>
             </>
           )}
         </div>
+
       </div>
     </nav>
   )
