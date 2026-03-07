@@ -48,30 +48,50 @@ export default function HomePage() {
 
       {/* Feature cards */}
       <section className="bg-white border-t border-gray-100 py-20 px-4">
-        <div className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-10 text-center">
-          {[
-            {
-              icon: String.fromCodePoint(0x1F4AC),
-              title: 'Real-time messaging',
-              body: 'Instant messages, channels, and direct conversations built for speed and delivered live across every node in the network.',
-            },
-            {
-              icon: String.fromCodePoint(0x1F310),
-              title: 'Truly federated',
-              body: 'No single company controls the network. Servers talk to each other directly so your communities stay online and independent.',
-            },
-            {
-              icon: String.fromCodePoint(0x1F511),
-              title: 'You own your identity',
-              body: 'One account works across every Concordia server. Your profile, your data, your rules secured with signed tokens.',
-            },
-          ].map(({ icon, title, body }) => (
-            <div key={title} className="flex flex-col items-center gap-3">
-              <span className="text-4xl">{icon}</span>
-              <h3 className="font-bold text-gray-900 text-lg">{title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{body}</p>
-            </div>
-          ))}
+        <div className="max-w-5xl mx-auto">
+          <p className="text-center text-indigo-400 text-xs uppercase tracking-widest font-semibold mb-14">
+            What makes Concordia different
+          </p>
+          <div className="grid sm:grid-cols-3 gap-x-10 gap-y-14 text-center">
+            {[
+              {
+                icon: String.fromCodePoint(0x1F511),
+                title: 'One identity, every server',
+                body: 'Register a single global username. It works across every Concordia server — no separate accounts, no impersonation.',
+              },
+              {
+                icon: String.fromCodePoint(0x1F5A5),
+                title: 'Real servers',
+                body: 'Servers are actual hardware — bare metal or virtualised. Self-host at home, run in the cloud, or anything in between.',
+              },
+              {
+                icon: String.fromCodePoint(0x1F310),
+                title: 'Federated by design',
+                body: 'Servers talk directly to each other. Share emotes, messages, and channels across instances without a central authority.',
+              },
+              {
+                icon: String.fromCodePoint(0x1F5C4),
+                title: 'Your data, your rules',
+                body: 'Every byte lives on your server. Full message history, large uploads, unlimited custom emotes — stored exactly where you decide.',
+              },
+              {
+                icon: String.fromCodePoint(0x1F513),
+                title: 'No gatekeepers',
+                body: 'No single company owns the network. Any server can join or leave freely, and the communities you build always belong to you.',
+              },
+              {
+                icon: String.fromCodePoint(0x1F4D6),
+                title: 'Fully open source',
+                body: 'Every line of code is public. Audit it, fork it, self-host it, or contribute — Concordia has nothing to hide.',
+              },
+            ].map(({ icon, title, body }) => (
+              <div key={title} className="flex flex-col items-center gap-3">
+                <span className="text-4xl">{icon}</span>
+                <h3 className="font-bold text-gray-900 text-lg">{title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

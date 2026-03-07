@@ -5,7 +5,7 @@
 - [x] SVG full lockup (icon + wordmark) — `Logo - Indigo.svg`
 - [x] Icon only — `Icon - Indigo.png`
 - [x] Text only — `Text Only - Indigo.svg`
-- [ ] Light/white variants of each (for dark backgrounds) — *request from Peter when needed*
+- [ ] Light/white variants of each (for dark backgrounds) — *request when needed*
 
 ## Site / app
 - [x] Header logo — `Wordmark - Indigo.svg` used in Navbar
