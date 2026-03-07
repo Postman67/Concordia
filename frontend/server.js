@@ -17,6 +17,16 @@ if (!/^https?:\/\//i.test(FEDERATION_BASE_URL)) {
   FEDERATION_BASE_URL = `http://${FEDERATION_BASE_URL}`
 }
 
+// Append port if provided and not already in the URL
+const FEDERATION_PORT = process.env.FEDERATION_PORT
+if (FEDERATION_PORT) {
+  const parsed = new URL(FEDERATION_BASE_URL)
+  if (!parsed.port) {
+    parsed.port = FEDERATION_PORT
+    FEDERATION_BASE_URL = parsed.origin
+  }
+}
+
 const app = express()
 
 // ── Proxy: forward /api and /health to the Federation service ────────────────
