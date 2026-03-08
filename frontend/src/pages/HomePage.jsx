@@ -74,8 +74,28 @@
       </section>
 
       {/* Footer */}
-      <footer className="mt-auto py-6 text-center text-xs text-gray-400 border-t border-gray-100">
-        {'\u00A9'} {new Date().getFullYear()} Concordia Federation
+      <footer className="mt-auto border-t border-gray-100 py-10 px-4 text-xs text-gray-400">
+        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+          <span>{'\u00A9'} {new Date().getFullYear()} Concordia Federation</span>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            {[
+              { label: 'Concordia', href: 'https://github.com/Postman67/Concordia' },
+              { label: 'Federation', href: 'https://github.com/Postman67/Concordia-Federation' },
+              { label: 'Client', href: 'https://github.com/Postman67/Concordia-Client' },
+              { label: 'Server', href: 'https://github.com/Postman67/Concordia-Server' },
+            ].map(({ label, href }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-indigo-500 transition-colors"
+              >
+                GitHub — {label}
+              </a>
+            ))}
+          </div>
+        </div>
       </footer>
 
     </div>
