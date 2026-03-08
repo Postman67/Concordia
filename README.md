@@ -1,7 +1,6 @@
 <div align="center">
-  <img src="frontend/public/branding/Wordmark - Indigo.svg" alt="Concordia" height="60" />
+  <img src="branding/Hero - GitHub.svg" alt="Concordia — Talk free" width="860" />
   <br /><br />
-  <p><strong>Real-time, federated, open-source chat — built on real servers, owned by real people.</strong></p>
   <a href="https://github.com/Postman67/Concordia-Federation">Federation</a> ·
   <a href="https://github.com/Postman67/Concordia-Client">Client</a> ·
   <a href="https://github.com/Postman67/Concordia-Server">Server</a>
